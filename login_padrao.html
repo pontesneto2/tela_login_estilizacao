@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>    
+		<!--SC_JS_LIB-->
+        <title>[sis_titulo]</title>
+        <!--SC_PAGE_CHARSET-->
+        <link rel="stylesheet" href="{SC_LIB_CURRENT}login/css/login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<style>span.sc-ui-pwd-toggle-icon{position:relative;display:inline-block;cursor:pointer;right:.5rem;z-index:2;float:right;bottom:1.7rem}</style>
+    </head>
+	
+    <body>
+            <div class="foto-fundo">
+            <div class="content">
+                    <div class="background">
+                    <!--https://sistemas2.sda.ce.gov.br/scriptcase_novo/app/psjiv/_lib/libraries/grp/templateMI/fundoDiz3.jpg-->
+                    <div class="logo">
+                        <img src="https://www.sda.ce.gov.br/wp-content/uploads/sites/60/2021/04/sda-color-nova.png" alt="IDACE" width="85%">
+                    </div>
+                    
+                    <form class="form" action="" {SC_FORM_ATTR}>
+                        <!--SC_FORM_HIDDEN-->
+                        
+                        <h2 class="titulo-principal">
+                            [sis_titulo]
+                        </h2>
+                        
+                        <div class="control">
+                            <label class="label-control" for="name">USUÁRIO*</label>
+                            <input class="input {SC_FIELD_CLASS}" {SC_FIELD_INFO_usuario} type="text" placeholder="Digite o seu Usuário" name="name" style="97%";>
+                        </div>
+                        
+                        <div class="control-2">
+                            <label class="label-control2" for="pass">SENHA*</label>
+                            <input class="input {SC_FIELD_CLASS}" {SC_FIELD_INFO_senha} type="password" placeholder="Digite a sua Senha" name="pass" style="97%";>
+                        </div>
+                        <!--SC_CAPTCHA-->
+                        <!--SC_REQUIRED_MSG-->
+                        
+                        <div class="submit">
+                            <input style="background-color: #000000;" type="button" value="Acessar" {SC_FORM_SUBMIT_CALL}/>
+                        </div> 
+                        
+                        {SC_FIELD_INFO_links}
+                    </form>
+                    </div>
+            </div>    
+            </div>            
+    </body>
+</html>
+
+<style>
+    
+/* css reset padrão - boas práticas para documentos */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+		display: block;
+}
+
+
+	body {
+		line-height: 1;
+}
+	ol, ul {
+		list-style: none;
+}
+	blockquote, q {
+		quotes: none;
+}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+	html,body{
+    	height: 100%;
+}    
+	.content{
+    	max-width: 960px;
+    	margin: 0 auto;
+    	width: 100%;
+}
+    .foto-fundo{
+    	background: green url(https://sistemas2.sda.ce.gov.br/scriptcase_novo/app/psjiv/_lib/libraries/grp/templateMI/fundoDiz3.jpg)no-repeat center;
+    	background-size: cover;
+    	height: 100%;
+    	padding: 15% 0 0 0;
+}
+    .page-background{
+        width:0 auto; 
+        border:none; 
+        margin:0 auto; 
+        padding:0;
+    }
+    .background{
+        background-color:rgb(255, 255, 255); 
+        border-radius: 45px 0px 43px 0px;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        padding: 15px;
+        border: solid 5px #FFF;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        padding: 0px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .form{
+		border-radius: 28px;
+        height: 370px;
+        width: 400px;
+        text-align: center;
+		padding: 15px;
+    }
+    .titulo-principal{
+        text-align: center;   
+        color:#000000 
+        font-family: Helvetica, Arial, sans-serif; 
+        font-size:26px; 
+        font-weight:600;
+        margin-right: 2px;
+		margin-bottom: 40px;
+    }
+    .control{
+        color: #000000; /*<!--nome do usuário-->*/
+        border-radius: 0px 35px 35px 0px;
+        font-size: 14px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        padding-bottom: 5px;
+        text-align: left;
+
+    }
+    .form > .control .input {  /*<!--input usuário - caixas de texto-->*/
+    	border: none;
+    	border-radius: 4px;
+    	padding: 12px;
+    	width: 97%;
+   		transition: all .3s;
+		border: solid 1px #ececec;
+	}
+	.input{ /*<!--input usuário e senha - caixas de texto-->*/
+        border: none;
+        border-color: #cccccc;
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 12px;
+        width: 97%;
+        text-align: left;
+        margin-top: 3px;
+		border: solid 1px #ececec;
+        
+    }
+    .control-2{    
+        color: #000000;   /*<!--SENHA-->*/
+        font-size: 14px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        text-align: left;
+}
+	
+	 .form > .control {
+    	margin-bottom: 8px;
+}
+    
+	 .submit input {
+	    font-size:18px;
+	    font-family:Helvetica, Arial, sans-serif;
+	    width:95%;
+	    height:40px;
+	    margin-right: 5px;
+	    border-width:0px;
+	    color:#fff;
+	    border-color:rgba(45, 117, 10, 1);
+	    font-weight:bold;
+	    border-top-left-radius:9px;
+	    border-top-right-radius:9px;
+	    border-bottom-left-radius:9px;
+	    border-bottom-right-radius:9px;
+	    background-image: linear-gradient(15deg, #4c711f 0, #336715 25%, #085a07 50%, #004d00 75%, #004200 100%);
+}
+
+	 .submit input:hover {
+        background-image: linear-gradient(270deg, #488421 0, #347d1b 25%, #167514 50%, #006d0e 75%, #00650a 100%);
+}
+  
+
+</style>
