@@ -1,0 +1,150 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+		display: block;
+}
+
+
+	body {
+		line-height: 1;
+}
+	ol, ul {
+		list-style: none;
+}
+	blockquote, q {
+		quotes: none;
+}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+	html,body{
+    	height: 100%;
+}    
+	.content{
+    	max-width: 960px;
+    	margin: 0 auto;
+    	width: 100%;
+}
+    .foto-fundo{
+    	background: green url(https://sistemas2.sda.ce.gov.br/scriptcase_novo/app/psjiv/_lib/libraries/grp/templateMI/fundoDiz3.jpg)no-repeat center;
+    	background-size: cover;
+    	height: 100%;
+    	padding: 15% 0 0 0;
+}
+    .page-background{
+        width:0 auto; 
+        border:none; 
+        margin:0 auto; 
+        padding:0;
+    }
+    .background{
+        background-color:rgb(255, 255, 255); 
+        border-radius: 45px 0px 43px 0px;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        padding: 15px;
+        border: solid 5px #FFF;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        padding: 0px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .form{
+		border-radius: 28px;
+        height: 370px;
+        width: 400px;
+        text-align: center;
+		padding: 15px;
+    }
+    .titulo-principal{
+        text-align: center;   
+        color:#000000 
+        font-family: Helvetica, Arial, sans-serif; 
+        font-size:26px; 
+        font-weight:600;
+        margin-right: 2px;
+		margin-bottom: 40px;
+    }
+    .control{
+        color: #000000; /*<!--nome do usuário-->*/
+        border-radius: 0px 35px 35px 0px;
+        font-size: 14px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        padding-bottom: 5px;
+        text-align: left;
+
+    }
+    .form > .control .input {  /*<!--input usuário - caixas de texto-->*/
+    	border: none;
+    	border-radius: 4px;
+    	padding: 12px;
+    	width: 97%;
+   		transition: all .3s;
+		border: solid 1px #ececec;
+	}
+	.input{ /*<!--input usuário e senha - caixas de texto-->*/
+        border: none;
+        border-color: #cccccc;
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 12px;
+        width: 97%;
+        text-align: left;
+        margin-top: 3px;
+		border: solid 1px #ececec;
+        
+    }
+    .control-2{    
+        color: #000000;   /*<!--SENHA-->*/
+        font-size: 14px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        text-align: left;
+}
+	
+	 .form > .control {
+    	margin-bottom: 8px;
+}
+    
+	 .submit input {
+	    font-size:18px;
+	    font-family:Helvetica, Arial, sans-serif;
+	    width:95%;
+	    height:40px;
+	    margin-right: 5px;
+	    border-width:0px;
+	    color:#fff;
+	    border-color:rgba(45, 117, 10, 1);
+	    font-weight:bold;
+	    border-top-left-radius:9px;
+	    border-top-right-radius:9px;
+	    border-bottom-left-radius:9px;
+	    border-bottom-right-radius:9px;
+	    background-image: linear-gradient(15deg, #4c711f 0, #336715 25%, #085a07 50%, #004d00 75%, #004200 100%);
+}
+
+	 .submit input:hover {
+        background-image: linear-gradient(270deg, #488421 0, #347d1b 25%, #167514 50%, #006d0e 75%, #00650a 100%);
+}
